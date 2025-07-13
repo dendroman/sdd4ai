@@ -122,5 +122,6 @@ When creating new implementation files, use this JSDoc template:
 ## 📚 Related Documentation
 
 - [Navigation Guide](./NAVIGATION.md) - Complete navigation instructions
-- [Implementation Index](./IMPLEMENTATION.md) - Spec-to-code mapping
+- [Implementation Index](../IMPLEMENTATION.md) - Spec-to-code mapping
+- [Project Specifications](./_manifest.md) - Main specification index
 - [TypeScript Handbook - Path Mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)

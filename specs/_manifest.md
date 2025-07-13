@@ -53,6 +53,21 @@ This manifest provides a complete index of all specifications for the SDD4AI CLI
 
 ---
 
+## 🧭 Navigation & Development
+
+### Path Aliases & Navigation
+- [Path Aliases Configuration](./PATH_ALIASES.md) - Clean navigation with @spec/* aliases
+- [Navigation Guide](./NAVIGATION.md) - Complete guide for code-to-spec navigation
+- [Implementation Index](../IMPLEMENTATION.md) - Spec-to-code mapping
+
+### Development Standards
+- Specifications are the **source of truth** for all components
+- Implementation files link to specs via JSDoc comments using path aliases
+- One-way linking: Code → Specs (not bidirectional)
+- Use `@spec/components/` and `@spec/features/` aliases for clean navigation
+
+---
+
 ## 🏗️ Current Development Status
 
 ### ✅ Completed

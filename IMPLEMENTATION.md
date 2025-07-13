@@ -64,6 +64,11 @@ Each implementation file contains JSDoc comments that link back to the relevant 
 - Focus on **what** the component should do, not **how** it's implemented
 - Include interface definitions, responsibilities, and success criteria
 
+### Navigation & Path Aliases
+- Use [`specs/PATH_ALIASES.md`](./specs/PATH_ALIASES.md) for clean @spec/* navigation
+- Follow [`specs/NAVIGATION.md`](./specs/NAVIGATION.md) for complete navigation guide
+- Specifications documentation lives in `specs/` folder, not in source code
+
 ## 🎯 Implementation Priorities
 
 ### Phase 1 (Current)

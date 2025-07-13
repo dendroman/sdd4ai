@@ -93,7 +93,8 @@ Install these extensions for enhanced navigation:
 
 - **Complete Mapping:** [`IMPLEMENTATION.md`](../IMPLEMENTATION.md)
 - **Project Overview:** [`README.md`](../README.md)
-- **Specification Index:** [`specs/_manifest.md`](../specs/_manifest.md)
+- **Specification Index:** [`_manifest.md`](./_manifest.md)
+- **Path Aliases:** [`PATH_ALIASES.md`](./PATH_ALIASES.md)
 
 ## 🚀 Pro Tips
 
