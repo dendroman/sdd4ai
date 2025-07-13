@@ -3,6 +3,9 @@
 /**
  * create-spec-driven-project CLI Tool
  * Bootstrap spec-driven development projects with ease
+ * 
+ * @specification ./specs/components/cli-entry-point.md
+ * @feature ./specs/features/cli-command-parser.md
  */
 
 import { Command } from 'commander';

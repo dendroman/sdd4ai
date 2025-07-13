@@ -1,3 +1,11 @@
+/**
+ * Constants and Type Definitions for SDD4AI CLI Tool
+ * Centralized configuration and interface definitions
+ * 
+ * @specification ./specs/components/project-configuration.md
+ * @specification ./specs/components/template-variables.md
+ */
+
 export const CLI_NAME = 'create-spec-driven-project';
 export const CLI_VERSION = '0.1.0';
 export const CLI_DESCRIPTION =

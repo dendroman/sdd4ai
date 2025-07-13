@@ -98,13 +98,17 @@ Serves as the main executable entry point for the CLI tool, handling command reg
 - **Exit codes:** Follows Unix convention (0 = success, 1 = error)
 
 ### Current Implementation
-- File: `/src/index.ts`
 - Entry point in package.json: `"bin": { "create-spec-driven-project": "./dist/index.js" }`
 - Compilation target: `dist/index.js`
 
-### Known Issues
-- Options are not properly typed (using `any` type currently)
-- Need to fix ProjectOptions interface import and usage
+### Related Components
+- [Command Handler](./command-handler.md) - Processes the main project creation logic
+- [User Prompt Interface](./user-prompt-interface.md) - Handles interactive user input
+
+### Implementation Status
+- ✅ Options are properly typed with ProjectOptions interface
+- ✅ Command parsing and routing implemented
+- 🔄 Full project creation workflow in progress
 
 ### Future Enhancements
 - Add global error handler for unexpected exceptions
