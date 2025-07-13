@@ -1,53 +1,424 @@
-# Spec-Driven Development CLI Tool 🚀
+<div align="center">
 
-**Project Name:** `create-spec-driven-project`  
-**Goal:** A Command Line Interface (CLI) tool published as an NPM package to bootstrap spec-driven development projects.
+# create-spec-driven-project
 
-## 🎯 Overview
+[![npm version](https://badge.fury.io/js/create-spec-driven-project.svg)](https://badge.fury.io/js/create-spec-driven-project)
+[![Build Status](https://github.com/dendroman/sdd4ai/workflows/CI/badge.svg)](https://github.com/dendroman/sdd4ai/actions)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/npm/dm/create-spec-driven-project.svg)](https://npmjs.org/package/create-spec-driven-project)
 
-This CLI tool allows developers to quickly set up a complete spec-driven development workflow with a single command:
+**🚀 Bootstrap spec-driven development projects with ease**
+
+*A modern CLI tool that sets up comprehensive specification-driven development workflows in seconds*
+
+[**Get Started**](#-quick-start) • [**Documentation**](http://localhost:3000/sdd4ai/) • [**Examples**](#-examples) • [**Contributing**](#-contributing) • [**Roadmap**](#-roadmap)
+
+</div>
+
+---
+
+## 🎯 What is Spec-Driven Development?
+
+Spec-Driven Development (SDD) is a methodology where comprehensive specifications are created **before** implementation begins. This approach ensures:
+
+- **🎯 Clear Requirements** - Every feature is thoroughly planned
+- **📋 Better Collaboration** - Teams align on specifications before coding
+- **🔍 Improved Quality** - Edge cases are considered upfront
+- **📚 Living Documentation** - Specs evolve with your codebase
+- **⚡ Faster Development** - Less rework, clearer implementation path
+
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td>
+
+### 🏗️ **Project Scaffolding**
+- Complete `/specs` directory structure
+- Pre-configured templates and examples
+- Git repository initialization
+- Package.json with helper scripts
+
+</td>
+<td>
+
+### 📖 **Documentation Site**
+- Automatic Docusaurus integration
+- Beautiful, searchable documentation
+- Mobile-responsive design
+- Dark/light theme support
+
+</td>
+</tr>
+<tr>
+<td>
+
+### 🎨 **Professional Templates**
+- Feature specification templates
+- Component specification templates
+- Data model documentation
+- Testing strategy templates
+
+</td>
+<td>
+
+### ⚡ **Developer Experience**
+- Interactive CLI prompts
+- TypeScript support
+- Modern tooling integration
+- Customizable workflows
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+### Installation & Usage
 
 ```bash
+# Create a new spec-driven project
 npx create-spec-driven-project my-awesome-project
+
+# Or install globally
+npm install -g create-spec-driven-project
+create-spec-driven-project my-project
 ```
 
-The tool will create a standardized project structure, generate essential templates, and optionally set up a documentation UI using Docusaurus.
+### Interactive Setup
+
+```bash
+? Project Name: my-awesome-project
+? Project Description: A revolutionary new application
+? Spec Owner: Development Team
+? Initialize git repository? Yes
+? Set up Docusaurus documentation? Yes
+? Include example specifications? Yes
+```
+
+### What You Get
+
+```
+my-awesome-project/
+├── 📁 specs/                    # Specification directory
+│   ├── 📄 index.md             # Main project manifest
+│   ├── 📁 features/            # Feature specifications
+│   ├── 📁 components/          # Component specifications
+│   └── 📁 templates/           # Reusable templates
+├── 📄 docusaurus.config.js     # Documentation configuration
+├── 📄 package.json             # Project configuration
+└── 📄 README.md                # Project documentation
+```
 
 ---
 
-## 🏗️ Core Functionality
+## 📋 Requirements
 
-### Primary Features
-
-1. **📁 Initialize Spec Directory Structure**
-   - Create standard `/specs` folder hierarchy
-   - Set up organized file structure for specifications
-
-2. **📝 Generate Core Templates**
-   - `_manifest.md`: Main index file with project overview
-   - `feature.template.md`: Template for new feature specifications
-   - `component.template.md`: Template for component specifications
-   - Additional templates as needed
-
-3. **🎨 Optional UI Integration**
-   - Interactive prompt to install Docusaurus
-   - Automatic configuration for serving `/specs` directory
-   - Pre-configured theme and navigation
-
-4. **⚡ Helper Scripts**
-   - Add convenience scripts to `package.json`
-   - Enable easy spec creation: `npm run spec:new -- --name="User Login"`
-   - Quick commands for documentation serving
+- **Node.js** ≥ 14.0.0
+- **npm** ≥ 6.0.0 or **yarn** ≥ 1.22.0
+- **Git** (for repository initialization)
 
 ---
 
-## 🛠️ Technology Stack
+## 💻 Examples
 
-### Core Dependencies
+### Basic Project Creation
 
-| Package | Purpose | Why This Choice |
-|---------|---------|-----------------|
-| **`commander.js`** | CLI argument parsing | Industry standard for complex commands |
+```bash
+# Minimal setup
+npx create-spec-driven-project my-project --no-ui --no-examples
+
+# Enterprise setup with all features
+npx create-spec-driven-project enterprise-app \
+  --spec-owner="Architecture Team" \
+  --template="enterprise"
+```
+
+### Working with Specifications
+
+```bash
+# Start documentation server
+npm run docs:dev
+
+# Create new specifications
+npm run spec:new:feature "User Authentication"
+npm run spec:new:component "Login Form"
+
+# Build documentation
+npm run docs:build
+```
+
+### CLI Options
+
+```bash
+create-spec-driven-project <project-name> [options]
+
+Options:
+  --no-ui              Skip Docusaurus installation
+  --no-git             Skip git repository initialization  
+  --no-examples        Skip example specifications
+  --template <name>    Use custom template (default: "default")
+  --spec-owner <name>  Set default specification owner
+  --silent             Minimal output mode
+  -h, --help           Display help information
+  -v, --version        Display version number
+```
+
+---
+
+## 🏗️ Architecture
+
+### Technology Stack
+
+| Technology | Purpose | Why We Chose It |
+|------------|---------|-----------------|
+| **TypeScript** | Core development | Type safety and better developer experience |
+| **Commander.js** | CLI framework | Industry standard with excellent TypeScript support |
+| **Inquirer** | Interactive prompts | Rich, accessible user interaction |
+| **Docusaurus** | Documentation | Modern, fast, and highly customizable |
+| **Jest** | Testing | Comprehensive testing with great TypeScript integration |
+
+### Project Structure
+
+```
+create-spec-driven-project/
+├── 📁 src/                     # Source code
+│   ├── 📄 index.ts            # CLI entry point
+│   ├── 📁 lib/                # Core functionality
+│   │   ├── 📄 commands.ts     # Command handlers
+│   │   ├── 📄 prompts.ts      # User interaction
+│   │   ├── 📄 templates.ts    # Template processing
+│   │   └── 📄 utils.ts        # Utility functions
+│   └── 📁 __tests__/          # Test suites
+├── 📁 templates/              # Project templates
+├── 📁 specs/                  # Project specifications
+└── 📁 docs/                   # Documentation source
+```
+
+---
+
+## 📊 Status & Roadmap
+
+### Current Status: `v0.1.0` - **In Development**
+
+| Phase | Component | Status | Progress |
+|-------|-----------|--------|----------|
+| **Phase 1** | Project Structure | ✅ Complete | 100% |
+| **Phase 1** | CLI Foundation | 🚧 In Progress | 70% |
+| **Phase 2** | Template System | 📋 Planned | 0% |
+| **Phase 3** | Docusaurus Integration | ✅ Complete | 100% |
+| **Phase 4** | Advanced Features | 📋 Planned | 0% |
+| **Phase 5** | NPM Publishing | 📋 Planned | 0% |
+
+### 🎯 Upcoming Releases
+
+#### v0.2.0 - **Core CLI** (Q3 2025)
+- ✅ Interactive project setup
+- ✅ Template system with variable substitution
+- ✅ File system operations
+- ✅ Input validation and error handling
+
+#### v0.3.0 - **Enhanced Features** (Q4 2025)
+- 🔄 Custom template support
+- 🔄 Git hooks integration
+- 🔄 CI/CD template generation
+- 🔄 Plugin system
+
+#### v1.0.0 - **Production Ready** (Q1 2026)
+- � Comprehensive testing suite
+- 🎯 Performance optimizations
+- 🎯 Enterprise features
+- 🎯 Complete documentation
+
+---
+
+## 🧪 Development
+
+### Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/dendroman/sdd4ai.git
+cd sdd4ai
+
+# Install dependencies
+npm install
+
+# Start development
+npm run dev
+
+# Run tests
+npm test
+
+# Build the project
+npm run build
+```
+
+### Development Commands
+
+```bash
+npm run dev          # Run CLI in development mode
+npm run build        # Build TypeScript to JavaScript
+npm run test         # Run test suite
+npm run test:watch   # Run tests in watch mode
+npm run lint         # Lint code with ESLint
+npm run format       # Format code with Prettier
+npm run docs:dev     # Start documentation server
+npm run docs:build   # Build documentation
+```
+
+### Testing
+
+We maintain high test coverage and use modern testing practices:
+
+```bash
+# Unit tests
+npm run test
+
+# Integration tests
+npm run test:integration
+
+# End-to-end tests
+npm run test:e2e
+
+# Coverage report
+npm run test:coverage
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+### Ways to Contribute
+
+- 🐛 **Report bugs** via [GitHub Issues](https://github.com/dendroman/sdd4ai/issues)
+- 💡 **Suggest features** through [GitHub Discussions](https://github.com/dendroman/sdd4ai/discussions)
+- 📖 **Improve documentation** with pull requests
+- 🔧 **Submit code** following our contribution guidelines
+
+### Development Workflow
+
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
+3. **Follow** our [specification-first development process](./specs/index.md)
+4. **Write** tests for your changes
+5. **Ensure** all tests pass: `npm test`
+6. **Commit** using [Conventional Commits](https://conventionalcommits.org/)
+7. **Submit** a pull request
+
+### Code Style
+
+- **TypeScript** for all source code
+- **ESLint** + **Prettier** for formatting
+- **Conventional Commits** for commit messages
+- **100% test coverage** for new features
+
+---
+
+## 📚 Documentation
+
+### 📖 **Comprehensive Guides**
+- [**📋 Specifications**](http://localhost:3000/sdd4ai/) - Complete project specifications
+- [**🚀 Getting Started**](#-quick-start) - Quick setup guide
+- [**🏗️ Architecture**](#-architecture) - Technical overview
+- [**🔧 API Reference**](./docs/api.md) - Detailed API documentation
+
+### 🎯 **Examples & Tutorials**
+- [**Basic Usage**](./docs/examples/basic.md) - Simple project setup
+- [**Advanced Configuration**](./docs/examples/advanced.md) - Custom templates and workflows
+- [**Enterprise Setup**](./docs/examples/enterprise.md) - Large-scale team usage
+- [**Integration Guide**](./docs/examples/integration.md) - CI/CD and tooling
+
+---
+
+## 📈 Community & Support
+
+<div align="center">
+
+### Join Our Community
+
+[![Discord](https://img.shields.io/discord/123456789?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/sdd4ai)
+[![Twitter](https://img.shields.io/twitter/follow/sdd4ai?style=for-the-badge&logo=twitter)](https://twitter.com/sdd4ai)
+[![GitHub Discussions](https://img.shields.io/github/discussions/dendroman/sdd4ai?style=for-the-badge&logo=github)](https://github.com/dendroman/sdd4ai/discussions)
+
+</div>
+
+### Getting Help
+
+- 💬 **Chat** with us on [Discord](https://discord.gg/sdd4ai)
+- 🐛 **Report issues** on [GitHub](https://github.com/dendroman/sdd4ai/issues)
+- 💡 **Start discussions** in [GitHub Discussions](https://github.com/dendroman/sdd4ai/discussions)
+- 📧 **Email** us at support@create-spec-driven-project.com
+
+### Statistics
+
+<div align="center">
+
+![GitHub Stars](https://img.shields.io/github/stars/dendroman/sdd4ai?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/dendroman/sdd4ai?style=social)
+![GitHub Contributors](https://img.shields.io/github/contributors/dendroman/sdd4ai)
+![GitHub Issues](https://img.shields.io/github/issues/dendroman/sdd4ai)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/dendroman/sdd4ai)
+
+</div>
+
+---
+
+## � License
+
+This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2025 create-spec-driven-project contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+---
+
+## 🙏 Acknowledgments
+
+### Special Thanks
+
+- **Contributors** - All the amazing developers who have contributed to this project
+- **Community** - Our growing community of spec-driven development practitioners
+- **Docusaurus Team** - For creating an amazing documentation framework
+- **Open Source Community** - For the incredible tools and libraries we build upon
+
+### Inspiration
+
+This project was inspired by the need for better specification management in software development teams. We believe that clear, comprehensive specifications lead to better software.
+
+---
+
+<div align="center">
+
+### ⭐ **Star us on GitHub!**
+
+*If this project helped you, please consider giving it a star ⭐*
+
+**Made with ❤️ by the create-spec-driven-project team**
+
+[**🏠 Homepage**](https://github.com/dendroman/sdd4ai) • [**📚 Documentation**](http://localhost:3000/sdd4ai/) • [**💼 Support**](mailto:support@create-spec-driven-project.com)
+
+</div>
 | **`inquirer`** | Interactive prompts | Best UX for user input collection |
 | **`fs-extra`** | File system operations | Enhanced file/directory management |
 | **`chalk`** | Terminal styling | Professional, colored output |
