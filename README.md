@@ -1,12 +1,12 @@
 <div align="center">
 
-# create-spec-driven-project
+# SDD4AI (Spec-Driven Development for AI)
 
-[![npm version](https://badge.fury.io/js/create-spec-driven-project.svg)](https://badge.fury.io/js/create-spec-driven-project)
+[![npm version](https://badge.fury.io/js/sdd4ai.svg)](https://badge.fury.io/js/sdd4ai)
 [![Build Status](https://github.com/dendroman/sdd4ai/workflows/CI/badge.svg)](https://github.com/dendroman/sdd4ai/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dm/create-spec-driven-project.svg)](https://npmjs.org/package/create-spec-driven-project)
+[![Downloads](https://img.shields.io/npm/dm/sdd4ai.svg)](https://npmjs.org/package/sdd4ai)
 
 **🚀 Bootstrap AI-optimized spec-driven development projects with ease**
 
@@ -84,11 +84,11 @@ Spec-Driven Development for AI (SDD4AI) is a methodology specifically designed f
 
 ```bash
 # Create a new AI-optimized spec-driven project
-npx create-spec-driven-project my-ai-project
+npx sdd4ai my-ai-project
 
 # Or install globally
-npm install -g create-spec-driven-project
-create-spec-driven-project my-ai-project
+npm install -g sdd4ai
+sdd4ai my-ai-project
 ```
 
 ### AI-Enhanced Interactive Setup
@@ -133,10 +133,10 @@ my-ai-project/
 
 ```bash
 # Minimal setup for AI development
-npx create-spec-driven-project my-ai-project --no-ui --no-examples
+npx sdd4ai my-ai-project --no-ui --no-examples
 
 # Enterprise AI setup with all features
-npx create-spec-driven-project enterprise-ai-app \
+npx sdd4ai enterprise-ai-app \
   --spec-owner="AI Architecture Team" \
   --template="ai-enterprise" \
   --ai-enhanced
@@ -162,7 +162,7 @@ npm run ai:context:generate
 ### AI-Enhanced CLI Options
 
 ```bash
-create-spec-driven-project <project-name> [options]
+sdd4ai <project-name> [options]
 
 Options:
   --ai-enhanced        Enable AI-optimized templates and structure
@@ -194,7 +194,7 @@ Options:
 ### Project Structure
 
 ```
-create-spec-driven-project/
+sdd4ai/
 ├── 📁 src/                     # Source code
 │   ├── 📄 index.ts            # CLI entry point
 │   ├── 📁 lib/                # Core functionality
@@ -363,7 +363,7 @@ We welcome contributions from the community! Here's how you can help:
 - 💬 **Chat** with us on [Discord](https://discord.gg/sdd4ai)
 - 🐛 **Report issues** on [GitHub](https://github.com/dendroman/sdd4ai/issues)
 - 💡 **Start discussions** in [GitHub Discussions](https://github.com/dendroman/sdd4ai/discussions)
-- 📧 **Email** us at support@create-spec-driven-project.com
+- 📧 **Email** us at support@sdd4ai.com
 
 ### Statistics
 
@@ -386,7 +386,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 ```
 MIT License
 
-Copyright (c) 2025 create-spec-driven-project contributors
+Copyright (c) 2025 SDD4AI contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -424,9 +424,9 @@ The rise of LLMs and AI coding assistants has created a unique opportunity to re
 
 *If this project helped you, please consider giving it a star ⭐*
 
-**Made with ❤️ by the create-spec-driven-project team**
+**Made with ❤️ by the SDD4AI team**
 
-[**🏠 Homepage**](https://github.com/dendroman/sdd4ai) • [**📚 Documentation**](http://localhost:3000/sdd4ai/) • [**💼 Support**](mailto:support@create-spec-driven-project.com)
+[**🏠 Homepage**](https://github.com/dendroman/sdd4ai) • [**📚 Documentation**](http://localhost:3000/sdd4ai/) • [**💼 Support**](mailto:support@sdd4ai.com)
 
 </div>
 | **`inquirer`** | Interactive prompts | Best UX for user input collection |

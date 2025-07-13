@@ -1,10 +1,10 @@
 {
-  "name": "create-spec-driven-project",
+  "name": "sdd4ai",
   "version": "0.1.0",
-  "description": "Bootstrap spec-driven development projects with ease",
+  "description": "Spec-Driven Development for AI - Bootstrap AI-optimized development projects with LLM-friendly specifications",
   "main": "dist/index.js",
   "bin": {
-    "create-spec-driven-project": "./dist/index.js"
+    "sdd4ai": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -26,12 +26,20 @@
     "spec:new:component": "echo 'Component specification creation will be implemented'"
   },
   "keywords": [
+    "ai",
+    "llm",
+    "spec-driven-development",
+    "sdd4ai",
+    "artificial-intelligence",
+    "ai-development",
     "cli",
     "scaffold",
     "specifications",
     "documentation",
     "development",
-    "typescript"
+    "typescript",
+    "ai-agents",
+    "machine-learning"
   ],
   "author": "dendroman",
   "license": "MIT",

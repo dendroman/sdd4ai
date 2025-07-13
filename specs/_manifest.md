@@ -1,6 +1,7 @@
-# Project Specification: create-spec-driven-project (SDD4AI)
+# Project Specification: SDD4AI (Spec-Driven Development for AI)
 
 **Description:** A Command Line Interface (CLI) tool published as an NPM package to bootstrap **Spec-Driven Development for AI** projects with AI-optimized structure and LLM-friendly specifications  
+**Package Name:** sdd4ai  
 **Owner:** dendroman  
 **Created:** July 13, 2025  
 **Status:** In Development  
@@ -10,7 +11,7 @@
 
 ## 📋 Specification Index
 
-This manifest provides a complete index of all specifications for the create-spec-driven-project CLI tool, specifically designed to create **AI-optimized development workflows** and **LLM-friendly project structures**.
+This manifest provides a complete index of all specifications for the SDD4AI CLI tool, specifically designed to create **AI-optimized development workflows** and **LLM-friendly project structures**.
 
 ### 🎯 AI-Enhanced Features
 - [CLI Command Parser](./features/cli-command-parser.md) - AI-optimized command line interface functionality
