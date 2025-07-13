@@ -1,51 +1,54 @@
-# Project Specification: create-spec-driven-project
+# Project Specification: create-spec-driven-project (SDD4AI)
 
-**Description:** A Command Line Interface (CLI) tool published as an NPM package to bootstrap spec-driven development projects with ease  
+**Description:** A Command Line Interface (CLI) tool published as an NPM package to bootstrap **Spec-Driven Development for AI** projects with AI-optimized structure and LLM-friendly specifications  
 **Owner:** dendroman  
 **Created:** July 13, 2025  
 **Status:** In Development  
+**Focus:** AI-Enhanced Development Workflows  
 
 ---
 
 ## 📋 Specification Index
 
-This manifest provides a complete index of all specifications for the create-spec-driven-project CLI tool.
+This manifest provides a complete index of all specifications for the create-spec-driven-project CLI tool, specifically designed to create **AI-optimized development workflows** and **LLM-friendly project structures**.
 
-### 🎯 Features
-- [CLI Command Parser](./features/cli-command-parser.md) - Core command line interface functionality
-- [Interactive Project Setup](./features/interactive-project-setup.md) - User-friendly project configuration
-- [Template System](./features/template-system.md) - Dynamic file generation from templates
-- [Docusaurus Integration](./features/docusaurus-integration.md) - Automatic documentation site setup
-- [Git Repository Initialization](./features/git-repo-init.md) - Automated git setup
+### 🎯 AI-Enhanced Features
+- [CLI Command Parser](./features/cli-command-parser.md) - AI-optimized command line interface functionality
+- [Interactive Project Setup](./features/interactive-project-setup.md) - AI-aware project configuration with LLM-friendly prompts
+- [Template System](./features/template-system.md) - Dynamic file generation with AI-readable templates
+- [Docusaurus Integration](./features/docusaurus-integration.md) - AI-enhanced documentation site with structured metadata
+- [Git Repository Initialization](./features/git-repo-init.md) - Automated git setup with AI-friendly commit patterns
 
-### 🧩 Components  
-- [CLI Entry Point](./components/cli-entry-point.md) - Main executable entry point
-- [Command Handler](./components/command-handler.md) - Command processing logic
-- [Template Engine](./components/template-engine.md) - Template processing and variable replacement
-- [File System Manager](./components/file-system-manager.md) - File and directory operations
-- [User Prompt Interface](./components/user-prompt-interface.md) - Interactive user input handling
+### 🧩 AI-Optimized Components  
+- [CLI Entry Point](./components/cli-entry-point.md) - Main executable entry point with AI agent compatibility
+- [Command Handler](./components/command-handler.md) - Command processing logic optimized for AI workflows
+- [Template Engine](./components/template-engine.md) - Template processing with AI-readable variable replacement
+- [File System Manager](./components/file-system-manager.md) - File and directory operations with AI-friendly structure
+- [User Prompt Interface](./components/user-prompt-interface.md) - Interactive input handling designed for AI agents
 
-### 📊 Data Models
-- [Project Configuration](./components/project-configuration.md) - Project setup configuration schema
-- [Template Variables](./components/template-variables.md) - Template variable definitions
-
----
-
-## 🚀 Quick Actions
-
-- **Create new feature spec:** `npm run spec:new feature`
-- **Create new component spec:** `npm run spec:new component`
-- **View documentation:** `npm run docs:dev`
-- **Build documentation:** `npm run docs:build`
+### 📊 AI-Ready Data Models
+- [Project Configuration](./components/project-configuration.md) - AI-optimized project setup configuration schema
+- [Template Variables](./components/template-variables.md) - LLM-friendly template variable definitions
+- [AI Context Schema](./components/ai-context-schema.md) - Structured metadata for AI agent understanding
 
 ---
 
-## 📖 Specification Guidelines
+## 🚀 Quick Actions (AI-Enhanced)
 
-1. **Clarity:** Each spec should be clear and unambiguous
-2. **Completeness:** Include all necessary details for implementation
-3. **Traceability:** Link related specifications
-4. **Version Control:** Track changes and decisions
+- **Create new AI-optimized feature spec:** `npm run spec:new feature`
+- **Create new AI-ready component spec:** `npm run spec:new component`
+- **View AI-enhanced documentation:** `npm run docs:dev`
+- **Build LLM-parseable documentation:** `npm run docs:build`
+- **Generate AI context summaries:** `npm run ai:context:generate`
+
+---
+
+## 📖 AI-Optimized Specification Guidelines
+
+1. **AI Clarity:** Each spec should be optimally structured for LLM understanding
+2. **LLM Completeness:** Include all necessary context for AI agent implementation
+3. **Structured Traceability:** Link related specifications with machine-readable references
+4. **AI Version Control:** Track changes with AI-friendly commit patterns and metadata
 
 ---
 
@@ -58,15 +61,17 @@ This manifest provides a complete index of all specifications for the create-spe
 - Development tooling (ESLint, Prettier, Jest)
 
 ### 🚧 In Progress
-- Command parsing implementation
-- Interactive prompts
-- Template system design
+- AI-optimized command parsing implementation
+- LLM-friendly interactive prompts
+- AI-enhanced template system design
+- Structured metadata generation for AI agents
 
 ### 📋 Planned
-- Docusaurus integration
-- File system operations
-- Example specifications
-- NPM package publishing
+- Advanced AI agent integration
+- LLM-optimized file system operations
+- AI-ready example specifications
+- Enhanced AI context generation
+- NPM package publishing with AI-focused documentation
 
 ---
 
