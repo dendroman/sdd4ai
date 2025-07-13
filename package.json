@@ -16,7 +16,14 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write src/**/*.ts",
     "prepare": "husky install",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs:dev": "docusaurus start",
+    "docs:build": "docusaurus build",
+    "docs:serve": "docusaurus serve",
+    "docs:clear": "docusaurus clear",
+    "spec:new": "echo 'Creating new specification...' && echo 'Usage: npm run spec:new:feature <name> or npm run spec:new:component <name>'",
+    "spec:new:feature": "echo 'Feature specification creation will be implemented'",
+    "spec:new:component": "echo 'Component specification creation will be implemented'"
   },
   "keywords": [
     "cli",
@@ -37,32 +44,34 @@
     "README.md"
   ],
   "dependencies": {
-    "commander": "^11.0.0",
-    "inquirer": "^9.2.8",
-    "fs-extra": "^11.1.1",
+    "boxen": "^7.1.1",
     "chalk": "^5.3.0",
-    "validate-npm-package-name": "^5.0.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.2.8",
     "ora": "^7.0.1",
-    "boxen": "^7.1.1"
+    "validate-npm-package-name": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@types/inquirer": "^9.0.3",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
     "@types/fs-extra": "^11.0.1",
-    "@types/validate-npm-package-name": "^4.0.0",
+    "@types/inquirer": "^9.0.3",
     "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@types/validate-npm-package-name": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6",
-    "ts-node": "^10.9.1",
-    "jest": "^29.6.1",
-    "ts-jest": "^29.1.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3"
+    "jest": "^29.6.1",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   },
   "lint-staged": {
     "src/**/*.ts": [

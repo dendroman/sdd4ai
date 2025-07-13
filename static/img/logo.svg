@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#2e8555" stroke="#fff" stroke-width="4"/>
+  
+  <!-- Document icon -->
+  <rect x="60" y="50" width="60" height="80" fill="#fff" rx="4"/>
+  <rect x="65" y="60" width="50" height="4" fill="#2e8555"/>
+  <rect x="65" y="70" width="40" height="3" fill="#2e8555"/>
+  <rect x="65" y="80" width="45" height="3" fill="#2e8555"/>
+  <rect x="65" y="90" width="35" height="3" fill="#2e8555"/>
+  
+  <!-- Gear icon overlay -->
+  <circle cx="120" cy="120" r="15" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+  <circle cx="120" cy="120" r="8" fill="#fff"/>
+  
+  <!-- Checkmark -->
+  <path d="M85 95 L90 100 L105 85" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
