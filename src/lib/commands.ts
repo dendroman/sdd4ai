@@ -2,8 +2,15 @@
  * Command Handlers for SDD4AI CLI Tool
  * Orchestrates project creation and setup operations
  * 
- * @specification ./specs/components/command-handler.md
- * @feature ./specs/features/interactive-project-setup.md
+ * @specification @spec/components/command-handler.md
+ * @feature @spec/features/interactive-project-setup.md
+ * @see {@link @spec/components/command-handler.md | Component Specification}
+ * @see {@link @spec/features/interactive-project-setup.md | Feature Specification}
+ * 
+ * Navigation:
+ * - Ctrl+Click on paths above to open specs
+ * - Use Command Palette: "Go to File" -> type "command-handler"
+ * - Check IMPLEMENTATION.md for complete mapping
  */
 
 import chalk from 'chalk';

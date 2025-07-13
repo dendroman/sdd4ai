@@ -2,7 +2,7 @@
  * File System Manager for SDD4AI CLI Tool
  * Handles file and directory operations with AI-friendly structure
  * 
- * @specification ../specs/components/file-system-manager.md
+ * @specification @spec/components/file-system-manager.md
  */
 
 import { promises as fs } from 'fs';

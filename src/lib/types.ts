@@ -2,8 +2,8 @@
  * Type Definitions for SDD4AI CLI Tool
  * Centralized type definitions for AI-optimized development workflows
  * 
- * @specification ../specs/components/template-variables.md
- * @specification ../specs/components/project-configuration.md
+ * @specification @spec/components/template-variables.md
+ * @specification @spec/components/project-configuration.md
  */
 
 export interface TemplateVariables {

@@ -2,8 +2,8 @@
  * User Prompt Interface for SDD4AI CLI Tool
  * Interactive input handling designed for AI agents
  * 
- * @specification ../specs/components/user-prompt-interface.md
- * @feature ../specs/features/interactive-project-setup.md
+ * @specification @spec/components/user-prompt-interface.md
+ * @feature @spec/features/interactive-project-setup.md
  */
 
 import chalk from 'chalk';

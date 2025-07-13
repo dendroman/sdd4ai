@@ -2,8 +2,8 @@
  * Template Engine for SDD4AI CLI Tool
  * Handles template processing with AI-readable variable replacement
  * 
- * @specification ../specs/components/template-engine.md
- * @feature ../specs/features/template-system.md
+ * @specification @spec/components/template-engine.md
+ * @feature @spec/features/template-system.md
  */
 
 import { promises as fs } from 'fs';

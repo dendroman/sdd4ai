@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * create-spec-driven-project CLI Tool
- * Bootstrap spec-driven development projects with ease
+ * SDD4AI CLI Tool - CLI Entry Point
+ * Bootstrap spec-driven development projects with AI-optimized structure
  * 
- * @specification ./specs/components/cli-entry-point.md
- * @feature ./specs/features/cli-command-parser.md
+ * @specification @spec/components/cli-entry-point.md
+ * @feature @spec/features/cli-command-parser.md
  */
 
 import { Command } from 'commander';
