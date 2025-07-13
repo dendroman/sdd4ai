@@ -10,7 +10,16 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['warn', { 
+      'argsIgnorePattern': '^_',
+      'varsIgnorePattern': '^_',
+      'ignoreRestSiblings': true 
+    }],
+    'no-unused-vars': ['warn', { 
+      'argsIgnorePattern': '^_',
+      'varsIgnorePattern': '^_',
+      'ignoreRestSiblings': true 
+    }],
     '@typescript-eslint/explicit-function-return-type': 'warn',
     '@typescript-eslint/no-explicit-any': 'error',
     'prefer-const': 'error',

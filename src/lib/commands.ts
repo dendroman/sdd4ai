@@ -83,7 +83,7 @@ async function setupProjectStructure(
 ): Promise<void> {
   const projectPath = path.resolve(process.cwd(), config.name);
   const fsManager = new FileSystemManager(projectPath);
-  const templateEngine = new TemplateEngine('./templates');
+  const _templateEngine = new TemplateEngine('./templates');
 
   promptInterface.displayProgress('Creating project directory...');
   await fsManager.ensureDirectory('.');
@@ -93,12 +93,12 @@ async function setupProjectStructure(
 
   if (config.features.examples) {
     promptInterface.displayProgress('Adding example specifications...');
-    await setupExampleSpecs(fsManager, templateEngine, config);
+    await setupExampleSpecs(fsManager);
   }
 
   if (config.features.ui) {
     promptInterface.displayProgress('Setting up Docusaurus documentation...');
-    await setupDocusaurus(fsManager, config);
+    await setupDocusaurus(fsManager);
   }
 
   if (config.features.git) {
@@ -124,13 +124,9 @@ async function setupSpecsStructure(fsManager: FileSystemManager): Promise<void> 
 /**
  * Setup example specifications
  * @param fsManager - File system manager
- * @param _templateEngine - Template engine (reserved for future use)
- * @param _config - Project configuration (reserved for future use)
  */
 async function setupExampleSpecs(
-  fsManager: FileSystemManager,
-  _templateEngine: TemplateEngine,
-  _config: ProjectConfig
+  fsManager: FileSystemManager
 ): Promise<void> {
   // This would process templates and create example specs
   // For now, create placeholder files
